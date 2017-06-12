@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" focusTraversable="true" gridLinesVisible="false" hgap="10.0" pickOnBounds="true" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="crawler.MainController">
+  <children>
+    <AnchorPane id="AnchorPane" focusTraversable="false" maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+      <children>
+        <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="600.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+          <children>
+            <MenuBar VBox.vgrow="ALWAYS">
+              <menus>
+                <Menu mnemonicParsing="false" text="Program">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#close" text="Close  Ctrl+C" fx:id="exit" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="About">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <TabPane id="asd" fx:id="CustomTabPane" prefHeight="465.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+              <tabs>
+                <Tab  disable="false" text="Students">
+                  <content>
+                    <fx:include fx:id="tabS" source="StudentTab.fxml" />
+                  </content>
+                </Tab>
+                <Tab  text="Logs">
+                  <content>
+                    <fx:include fx:id="tabL" source="LogTab.fxml" />
+                  </content>
+                </Tab>
+                <Tab  text="Chart">
+                  <content>
+                    <fx:include fx:id="tabH" source="HistogramTab.fxml" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+          </children>
+        </VBox>
+      </children>
+    </AnchorPane>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+  </columnConstraints>
+  <padding>
+    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+  </padding>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+  </rowConstraints>
+</GridPane>

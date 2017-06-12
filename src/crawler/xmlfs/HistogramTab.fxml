@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="Content" fx:id="tabH" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="598.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="crawler.xmlfs.HistogramController">
+  <children>
+    <BarChart fx:id="barChart" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="600.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+      <xAxis>
+        <CategoryAxis fx:id="categoryAxis" label="Marks" side="BOTTOM" />
+      </xAxis>
+      <yAxis>
+        <NumberAxis fx:id="numberAxis" autoRanging="true" label="Count" lowerBound="0.0" side="LEFT" tickLength="8.0" tickUnit="1.0" upperBound="10.0" />
+      </yAxis>
+    </BarChart>
+  </children>
+</AnchorPane>

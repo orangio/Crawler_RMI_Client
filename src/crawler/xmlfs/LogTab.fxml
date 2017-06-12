@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="Content" fx:id="tabL" focusTraversable="true" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="598.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="crawler.xmlfs.LogController">
+  <children>
+    <ListView fx:id="listView" layoutX="0.0" layoutY="0.0" prefHeight="520.0" prefWidth="598.0" />
+  </children>
+</AnchorPane>

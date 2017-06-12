@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane  minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crawler.xmlfs.StudentsController">
+        <center>
+            <TableView fx:id="tableView" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                <columns>
+                    <TableColumn fx:id="markColumn" prefWidth="150.0" text="Mark" />
+                    <TableColumn fx:id="firstNameColumn" prefWidth="150.0" text="First Name" />
+                    <TableColumn fx:id="lastNameColumn" prefWidth="150.0" text="Last Name" />
+                    <TableColumn fx:id="ageColumn" prefWidth="150.0" text="Age" />
+                </columns>
+                <BorderPane.margin>
+                    <Insets />
+                </BorderPane.margin>
+            </TableView>
+        </center>
+</BorderPane>
